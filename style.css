@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   --bg: #0f172a;
   --card: #1e293b;
@@ -6,7 +11,30 @@
   --muted: #94a3b8;
   --accent: #3b82f6;
 }
+body {
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
 
+.hero {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.skills, .projects, .contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project, .skill, .contact-card {
+  background: var(--card);
+  padding: 15px;
+  border-radius: 10px;
+}
 /* LIGHT MODE */
 body.light {
   --bg: #f8fafc;
