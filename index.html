@@ -4,88 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Artem Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="style.css">
 </head>
-  <img src="images/avatar.jpg" alt="your-photo">
-  <div>
-    <h1>Атаманчук Артем</h1>
-    <p>Junior Developer</p>
-    <p>Роблю сайти і додатки, люблю чистий код і сучасний дизайн</p>
-    <a href="#projects" class="btn">Дивитись проєкти</a>
+
+<body>
+
+<div class="container">
+
+  <nav>
+    <h3>Portfolio</h3>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <img src="images/avatar.jpg" alt="avatar">
+
+    <div>
+      <h1>Атаманчук Артем</h1>
+      <p>Junior Developer</p>
+      <p>Роблю сайти і додатки, люблю чистий код і сучасний дизайн</p>
+
+      <a href="#projects" class="btn">Дивитись проєкти</a>
+    </div>
   </div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Навички</h2>
+
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">C#</div>
+      <div class="skill">SQL</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Проєкти</h2>
+
+    <div class="projects">
+
+      <div class="project">
+        <img src="images/Kiewit.png" alt="Kiewit">
+        <div class="project-content">
+          <h3>Kiewit</h3>
+          <p>Сайт для проєктування, будівництва та інженерних робіт</p>
+          <button onclick="window.open('https://www.kiewit.com')">
+            Переглянути
+          </button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/evergreen.webp" alt="Evergreen">
+        <div class="project-content">
+          <h3>Evergreen RTO</h3>
+          <p>Система Rent-To-Own управління програмами</p>
+          <button onclick="window.open('https://www.evergreenrto.com')">
+            Переглянути
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section id="contacts">
+    <h2>Контакти</h2>
+
+    <div class="contacts">
+
+      <div class="contact-card">
+        <h3>GitHub</h3>
+        <a href="https://github.com/ArtemkAmg">ArtemkAmg</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Email</h3>
+        <a href="mailto:atamancuck2006@gmail.com">Email</a>
+      </div>
+
+      <div class="contact-card">
+        <h3>Telegram</h3>
+        <a href="https://t.me/Lebiga5">@Lebiga5</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Artem Portfolio</p>
+  </footer>
+
 </div>
 
-<section id="skills">
-  <h2>Навички</h2>
-  <div class="skills">
-    <div class="skill">HTML</div>
-    <div class="skill">CSS</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">C#</div>
-    <div class="skill">SQL</div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Проєкти</h2>
-  <div class="projects">
-
-    <div class="project">
-      <img src="images/Kiewit.png" alt="Logo">
-      <div class="project-content">
-        <h3>Kiewit</h3>
-        <p>Сайт для проєктування, будівництва та інженерних робіт</p>
-        <button onclick="window.open('https://www.kiewit.com')">Переглянути</button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Проєкти</h2>
-  <div class="projects">
-
-    <div class="project">
-      <img src="images/evergreen.webp" alt="Logo">
-      <div class="project-content">
-        <h3>Kiewit</h3>
-        <p>Сайт для управління програмами Rent-To-Own (RTO)</p>
-        <button onclick="window.open('https://www.evergreenrto.com')">Переглянути</button>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section id="contacts">
-  <h2>Контакти</h2>
-  <div class="contacts">
-
-    <div class="contact-card">
-      <h3>GitHub</h3>
-      <p><a href="https://github.com/ArtemkAmg">github.com/ArtemkaAmg</a></p>
-    </div>
-
-    <div class="contact-card">
-      <h3>Email</h3>
-      <p><a href="mailto:your@email.com">atamancuck2006@gmail.com</a></p>
-    </div>
-
-    <div class="contact-card">
-      <h3>Telegram</h3>
-      <p><a href="https://t.me/Lebiga5">@Lebiga5</a></p>
-    </div>
-
-  </div>
-</section>
-
-<footer>
-  <p>© <span id="year"></span></p>
-</footer>
-
-</div>
-
-<script src="script.js"></script>
 </body>
 </html>
